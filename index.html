@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="Images/PixelT-Rex.png">
+    <title>Dominic Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,400&family=Inter:wght@300;400;600;900&family=JetBrains+Mono:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav id="navbar">
+        <a href="#" class="logo">Portfolio</a>
+        <div class="nav-links">
+            <a href="https://github.com/Dinosaurorr" target="_blank" title="GitHub" class="social-icon-link">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+            </a>
+            <a href="https://www.linkedin.com/in/dominic-arcibal-263648404" target="_blank" title="LinkedIn" class="social-icon-link">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+            </a>
+        </div>
+        <button class="mobile-menu-toggle" id="menuToggle" aria-label="Toggle Menu">
+            <span></span>
+            <span></span>
+        </button>
+    </nav>
+    
+    <div class="side-nav" id="sideNav">
+        <a href="#hero" class="side-nav-dot active" data-section="hero"><span>Home</span></a>
+        <a href="#about" class="side-nav-dot" data-section="about"><span>About</span></a>
+        <a href="#portfolio" class="side-nav-dot" data-section="portfolio"><span>Projects</span></a>
+        <a href="#contact" class="side-nav-dot" data-section="contact"><span>Contact</span></a>
+    </div>
+
+    <div class="mobile-nav" id="mobileNav">
+        <div class="mobile-nav-links">
+            <a href="https://github.com/Dinosaurorr" target="_blank">GITHUB</a>
+            <a href="https://www.linkedin.com/in/dominic-arcibal-263648404" target="_blank">LinkedIn</a>
+        </div>
+    </div>
+
+    <section class="hero" id="hero">
+        <canvas id="hero-stars" class="hero-canvas"></canvas>
+        <div class="hero-content">
+            <h1 id="hero-title">DOMINIC</h1>
+            <span id="hero-subtitle" class="hero-subtitle">Freelancer — Web Developer</span>
+        </div>
+    </section>
+
+    <section class="tech-stack">
+        <div class="marquee">
+            <div class="marquee-content">
+                <div class="tech-item"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 640 640"><path d="M128 96L162.9 491.8L319.5 544L477.1 491.8L512 96L128 96zM436.2 223.9L252.4 223.9L256.5 273.3L432.1 273.3L418.5 421.7L320.6 448.7L320.6 449L319.5 449L220.8 421.7L214.8 345.9L262.5 345.9L266 384L319.5 398.5L373.2 384L379.2 321.8L212.3 321.8L199.5 176.2L440.6 176.2L436.2 223.9z" fill="currentColor"/></svg><span>HTML5</span></div>
+                <div class="tech-item"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 640 640"><path d="M128 96L162.9 491.8L320 544L477.1 491.8L512 96L128 96zM441.1 176L436.3 223.3L321 272.6L320.7 272.7L432.2 272.7L419.4 419.3L321.2 448L222.4 418.8L216 344.9L264.9 344.9L268.1 383.2L320.7 396.5L375.4 381.1L379.1 319.5L212.8 319L212.8 318.9L212.6 319L209 272.7L321.1 226L327.6 223.3L204.7 223.3L198.9 176L441.1 176z" fill="currentColor"/></svg><span>CSS3</span></div>
+                <div class="tech-item"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 640 640"><path d="M96 96L96 544L544 544L544 96L96 96zM339.8 445.4C339.8 489 314.2 508.9 276.9 508.9C243.2 508.9 223.7 491.5 213.7 470.4L248 449.7C254.6 461.4 260.6 471.3 275.1 471.3C288.9 471.3 297.7 465.9 297.7 444.8L297.7 301.7L339.8 301.7L339.8 445.4zM439.4 508.9C400.3 508.9 375 490.3 362.7 465.9L397 446.1C406 460.8 417.8 471.7 438.5 471.7C455.9 471.7 467.1 463 467.1 450.9C467.1 436.5 455.7 431.4 436.4 422.9L425.9 418.4C395.5 405.5 375.4 389.2 375.4 354.9C375.4 323.3 399.5 299.3 437 299.3C463.8 299.3 483 308.6 496.8 333L464 354C456.8 341.1 449 336 436.9 336C424.6 336 416.8 343.8 416.8 354C416.8 366.6 424.6 371.7 442.7 379.6L453.2 384.1C489 399.4 509.1 415.1 509.1 450.3C509.1 488.1 479.3 508.9 439.4 508.9z" fill="currentColor"/></svg><span>JavaScript</span></div>
+                <div class="tech-item"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 640 640"><path d="M128 96L162.9 491.8L319.5 544L477.1 491.8L512 96L128 96zM436.2 223.9L252.4 223.9L256.5 273.3L432.1 273.3L418.5 421.7L320.6 448.7L320.6 449L319.5 449L220.8 421.7L214.8 345.9L262.5 345.9L266 384L319.5 398.5L373.2 384L379.2 321.8L212.3 321.8L199.5 176.2L440.6 176.2L436.2 223.9z" fill="currentColor"/></svg><span>HTML5</span></div>
+                <div class="tech-item"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 640 640"><path d="M128 96L162.9 491.8L320 544L477.1 491.8L512 96L128 96zM441.1 176L436.3 223.3L321 272.6L320.7 272.7L432.2 272.7L419.4 419.3L321.2 448L222.4 418.8L216 344.9L264.9 344.9L268.1 383.2L320.7 396.5L375.4 381.1L379.1 319.5L212.8 319L212.8 318.9L212.6 319L209 272.7L321.1 226L327.6 223.3L204.7 223.3L198.9 176L441.1 176z" fill="currentColor"/></svg><span>CSS3</span></div>
+                <div class="tech-item"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 640 640"><path d="M96 96L96 544L544 544L544 96L96 96zM339.8 445.4C339.8 489 314.2 508.9 276.9 508.9C243.2 508.9 223.7 491.5 213.7 470.4L248 449.7C254.6 461.4 260.6 471.3 275.1 471.3C288.9 471.3 297.7 465.9 297.7 444.8L297.7 301.7L339.8 301.7L339.8 445.4zM439.4 508.9C400.3 508.9 375 490.3 362.7 465.9L397 446.1C406 460.8 417.8 471.7 438.5 471.7C455.9 471.7 467.1 463 467.1 450.9C467.1 436.5 455.7 431.4 436.4 422.9L425.9 418.4C395.5 405.5 375.4 389.2 375.4 354.9C375.4 323.3 399.5 299.3 437 299.3C463.8 299.3 483 308.6 496.8 333L464 354C456.8 341.1 449 336 436.9 336C424.6 336 416.8 343.8 416.8 354C416.8 366.6 424.6 371.7 442.7 379.6L453.2 384.1C489 399.4 509.1 415.1 509.1 450.3C509.1 488.1 479.3 508.9 439.4 508.9z" fill="currentColor"/></svg><span>JavaScript</span></div>
+            </div>
+            <div class="marquee-content">
+                <div class="tech-item"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 640 640"><path d="M128 96L162.9 491.8L319.5 544L477.1 491.8L512 96L128 96zM436.2 223.9L252.4 223.9L256.5 273.3L432.1 273.3L418.5 421.7L320.6 448.7L320.6 449L319.5 449L220.8 421.7L214.8 345.9L262.5 345.9L266 384L319.5 398.5L373.2 384L379.2 321.8L212.3 321.8L199.5 176.2L440.6 176.2L436.2 223.9z" fill="currentColor"/></svg><span>HTML5</span></div>
+                <div class="tech-item"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 640 640"><path d="M128 96L162.9 491.8L320 544L477.1 491.8L512 96L128 96zM441.1 176L436.3 223.3L321 272.6L320.7 272.7L432.2 272.7L419.4 419.3L321.2 448L222.4 418.8L216 344.9L264.9 344.9L268.1 383.2L320.7 396.5L375.4 381.1L379.1 319.5L212.8 319L212.8 318.9L212.6 319L209 272.7L321.1 226L327.6 223.3L204.7 223.3L198.9 176L441.1 176z" fill="currentColor"/></svg><span>CSS3</span></div>
+                <div class="tech-item"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 640 640"><path d="M96 96L96 544L544 544L544 96L96 96zM339.8 445.4C339.8 489 314.2 508.9 276.9 508.9C243.2 508.9 223.7 491.5 213.7 470.4L248 449.7C254.6 461.4 260.6 471.3 275.1 471.3C288.9 471.3 297.7 465.9 297.7 444.8L297.7 301.7L339.8 301.7L339.8 445.4zM439.4 508.9C400.3 508.9 375 490.3 362.7 465.9L397 446.1C406 460.8 417.8 471.7 438.5 471.7C455.9 471.7 467.1 463 467.1 450.9C467.1 436.5 455.7 431.4 436.4 422.9L425.9 418.4C395.5 405.5 375.4 389.2 375.4 354.9C375.4 323.3 399.5 299.3 437 299.3C463.8 299.3 483 308.6 496.8 333L464 354C456.8 341.1 449 336 436.9 336C424.6 336 416.8 343.8 416.8 354C416.8 366.6 424.6 371.7 442.7 379.6L453.2 384.1C489 399.4 509.1 415.1 509.1 450.3C509.1 488.1 479.3 508.9 439.4 508.9z" fill="currentColor"/></svg><span>JavaScript</span></div>
+                <div class="tech-item"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 640 640"><path d="M128 96L162.9 491.8L319.5 544L477.1 491.8L512 96L128 96zM436.2 223.9L252.4 223.9L256.5 273.3L432.1 273.3L418.5 421.7L320.6 448.7L320.6 449L319.5 449L220.8 421.7L214.8 345.9L262.5 345.9L266 384L319.5 398.5L373.2 384L379.2 321.8L212.3 321.8L199.5 176.2L440.6 176.2L436.2 223.9z" fill="currentColor"/></svg><span>HTML5</span></div>
+                <div class="tech-item"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 640 640"><path d="M128 96L162.9 491.8L320 544L477.1 491.8L512 96L128 96zM441.1 176L436.3 223.3L321 272.6L320.7 272.7L432.2 272.7L419.4 419.3L321.2 448L222.4 418.8L216 344.9L264.9 344.9L268.1 383.2L320.7 396.5L375.4 381.1L379.1 319.5L212.8 319L212.8 318.9L212.6 319L209 272.7L321.1 226L327.6 223.3L204.7 223.3L198.9 176L441.1 176z" fill="currentColor"/></svg><span>CSS3</span></div>
+                <div class="tech-item"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 640 640"><path d="M96 96L96 544L544 544L544 96L96 96zM339.8 445.4C339.8 489 314.2 508.9 276.9 508.9C243.2 508.9 223.7 491.5 213.7 470.4L248 449.7C254.6 461.4 260.6 471.3 275.1 471.3C288.9 471.3 297.7 465.9 297.7 444.8L297.7 301.7L339.8 301.7L339.8 445.4zM439.4 508.9C400.3 508.9 375 490.3 362.7 465.9L397 446.1C406 460.8 417.8 471.7 438.5 471.7C455.9 471.7 467.1 463 467.1 450.9C467.1 436.5 455.7 431.4 436.4 422.9L425.9 418.4C395.5 405.5 375.4 389.2 375.4 354.9C375.4 323.3 399.5 299.3 437 299.3C463.8 299.3 483 308.6 496.8 333L464 354C456.8 341.1 449 336 436.9 336C424.6 336 416.8 343.8 416.8 354C416.8 366.6 424.6 371.7 442.7 379.6L453.2 384.1C489 399.4 509.1 415.1 509.1 450.3C509.1 488.1 479.3 508.9 439.4 508.9z" fill="currentColor"/></svg><span>JavaScript</span></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about reveal" id="about">
+        <div class="about-container">
+            <div class="about-left reveal-left">
+                <h2 class="behind-text">
+                    <span class="behind-line outline">Behind</span>
+                    <span class="behind-line solid">The</span>
+                    <span class="behind-line outline">Screen</span>
+                </h2>
+            </div>
+            <div class="about-right reveal-right">
+                <div class="bio-text">
+                    <p>Ever since I was young, I’ve been passionate about computers, especially computer games. As time passed, I realized that I wanted to turn that passion into a profession. Because of that, I took ICT during senior high school and pursued a degree in Computer Science.</p>
+                    <p>I enjoy creating things on the internet, whether it’s designing websites, building projects, or learning new technologies. I’m passionate about improving my skills and bringing ideas to life through creativity and technology.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="portfolio reveal" id="portfolio">
+        <div class="section-header">
+            <div class="section-title">
+                <h2 class="behind-text">
+                    <span class="behind-line outline">Featured</span>
+                    <span class="behind-line solid">Creations</span>
+                </h2>
+                <p>Crafting modern, responsive interfaces and performance-oriented digital webpages.</p>
+            </div>
+            <div style="font-family: var(--font-mono); font-size: 10px; color: var(--muted);">003 / PROJECTS</div>
+        </div>
+
+        <div class="project-slider-wrapper">
+            <button class="slider-btn prev" id="prevProject" aria-label="Previous Project">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg>
+            </button>
+            
+            <div class="project-slider-viewport">
+                <div class="project-grid" id="projectTrack">
+                    <div class="project-item reveal-stagger">
+                        <div class="project-meta">
+                            <span>01 // Front End</span>
+                            <span>2026</span>
+                        </div>
+                        <div class="project-image parallax-wrap">
+                            <img src="Images/JoyaHavenLanding.png" alt="Joya Haven Blend">
+                        </div>
+
+                        <h3>Joya Haven Blend – Custom Business Website</h3>
+                           <p>Joya Haven Blend is a modern and responsive café website designed to help coffee businesses professionally 
+                            showcase their handcrafted drinks and signature beverages online. The website highlights coffee blends, matcha drinks, and refreshing café products through 
+                            a clean and visually appealing layout that enhances the customer experience on both desktop and mobile devices.</p>
+                            <br>
+                            
+                        <details class="mobile-interactive-features">
+                            <summary>Features <span class="toggle-icon">+</span></summary>
+                            <div class="features-list-wrapper">
+                                <ul>
+                                    <li>Modern and responsive design</li>
+                                    <li>Product showcase for coffee and specialty drinks</li>  
+                                    <li>Dark mode and light mode feature</li>
+                                    <li>Interactive carousel and menu sections</li>
+                                    <li>Smooth scroll and reveal animations</li>
+                                    <li>Zoomable product and menu images</li>
+                                    <li>Mobile-friendly navigation menu</li>
+                                    <li>Social media integration for better online presence</li>
+                                    <li>Smooth and aesthetic user interface</li>
+                                </ul>
+                            </div>
+                        </details>
+                        <br>
+
+                        <p>Joya Haven Blend was built to provide cafés and beverage businesses with a professional digital presence while making it easier for customers to explore products, discover featured drinks, and connect through social media platforms.</p>
+                        <a href="https://dinosaurorr.github.io/Joya-Haven-Blend/" class="view-demo-btn" target="_blank">View Full Demo</a>
+                    </div>
+
+                    <div class="project-item reveal-stagger">
+                        <div class="project-meta">
+                            <span>02 // Custom Business Website</span>
+                            <span>2026</span>
+                        </div>
+                        <div class="project-image parallax-wrap">
+                            <img src="Images/YourCoffee.png" alt="YourCoffee">
+                        </div>
+                        <h3>Your Coffee – Custom Business Website</h3>
+                        <p>Your Coffee is a modern and responsive custom business website designed to help coffee shop and franchise businesses
+                             professionally showcase their products and investment opportunities online. The website highlights handcrafted beverages,
+                              artisanal meals, and franchise packages through a clean and visually appealing layout that
+                               enhances the customer experience on both desktop and mobile devices.</p>
+                            <br>
+                            
+                        <details class="mobile-interactive-features">
+                            <summary>Features <span class="toggle-icon">+</span></summary>
+                            <div class="features-list-wrapper">
+                                <ul>
+                                    <li>Modern and responsive design</li>
+                                    <li>Product showcase for Drinks and Meals</li>
+                                    <li>Dark mode and light mode feature</li>
+                                    <li>Interactive carousel and menu sections</li>
+                                    <li>Smooth scroll and reveal animations</li>
+                                    <li>Zoomable product and menu images</li>
+                                    <li>Mobile-friendly navigation menu</li>
+                                    <li>Social media integration for better online presence</li>
+                                    <li>Smooth and aesthetic user interface</li>
+                                    <li>Franchise package showcase with inclusions</li>
+                                    <li>FAQ section for common customer inquiries</li>
+                                    <li>Our Story timeline carousel section</li>
+                                </ul>
+                            </div>
+                        </details>
+                        <br>
+                         <p>Your Coffee was built to provide coffee shop and franchise businesses with a professional digital presence while making it easier for customers to explore the menu, discover franchise opportunities, and connect through social media platforms.</p>
+                        <a href="https://coffee-shop-tan-seven.vercel.app" class="view-demo-btn" target="_blank">View Full Demo</a>
+                    </div>
+
+                    <div class="project-item reveal-stagger">
+                        <div class="project-meta">
+                            <span>02 // Custom Business Website</span>
+                            <span>2026</span>
+                        </div>
+                        <div class="project-image parallax-wrap">
+                            <img src="Images/Yuumii.png" alt="Yuumii">
+                        </div>
+                        <h3>Yuumii! – Custom Business Website</h3>
+                        <p>Yuumii is a modern and responsive custom business website designed to help cake and pastry businesses professionally 
+                            showcase their products online. The website highlights customized cakes, cupcakes, and other sweet creations through 
+                            a clean and visually appealing layout that enhances the customer experience on both desktop and mobile devices.</p>
+                            <br>
+                            
+                        <details class="mobile-interactive-features">
+                            <summary>Features <span class="toggle-icon">+</span></summary>
+                            <div class="features-list-wrapper">
+                                <ul>
+                                    <li>Modern and responsive design</li>
+                                    <li>Product showcase for Cakes and Cupcakes</li>  
+                                    <li>Dark mode and light mode feature</li>
+                                    <li>Interactive carousel and menu sections</li>
+                                    <li>Smooth scroll and reveal animations</li>
+                                    <li>Zoomable product and menu images</li>
+                                    <li>Mobile-friendly navigation menu</li>
+                                    <li>Social media integration for better online presence</li>
+                                    <li>Smooth and aesthetic user interface</li>
+                                    <li>Clean and organized customer review section</li>
+                                    <li>FAQ section for common customer inquiries</li>
+                                    <li>Inquiry form redirected directly to Facebook Messenger</li>
+                                </ul>
+                            </div>
+                        </details>
+                        <br>
+                         <p>Yuumii was built to provide businesses with a professional digital presence while making it easier for customers to explore products, send inquiries, and connect through social media platforms.</p>
+                        <a href="https://dinosaurorr.github.io/Yuumii/" class="view-demo-btn" target="_blank">View Full Demo</a>
+                    </div>
+
+                    
+                </div>
+            </div>
+
+            
+
+            <button class="slider-btn next" id="nextProject" aria-label="Next Project">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+            </button>
+        </div>
+    </section>
+
+
+
+    <section class="contact reveal" id="contact">
+        <div class="contact-container">
+            <div class="contact-header">
+                <h2 class="behind-text">
+                    <span class="behind-line outline">Let's</span>
+                    <span class="behind-line solid">Work</span>
+                    <span class="behind-line outline">Together</span>
+                </h2>
+                <div class="contact-sub">
+                    <p>Have a project in mind? Reach out and let's build something exceptional.</p>
+                </div>
+            </div>
+            
+            <div class="contact-form-container">
+                <form id="contact-form" class="contact-form reveal-stagger" action="https://formsubmit.co/ajax/dominicarcibal123@gmail.com" method="POST">
+                    <input type="hidden" name="_subject" value="New Portfolio Inquiry!">
+                    <input type="text" name="_gotcha" class="honey-pot">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="Your@email.com" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="budget">Budget</label>
+                        <input type="text" id="budget" name="budget" placeholder="Estimated Budget">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="3" placeholder="Message" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn" id="submitInquiry">Submit</button>
+                    <div id="form-status" class="form-status"></div>
+                </form>
+            </div>
+        </div>
+
+    </section>
+    
+    <footer class="main-footer">
+        <div class="footer-marquee">
+            <div class="marquee-inner">
+                <span>Dominic Arcibal</span>
+                <span class="separator">•</span>
+                <span>Web Developer</span>
+                <span class="separator">•</span>
+                <span>Freelancer</span>
+                <span class="separator">•</span>
+                <span>Rizal, Philippines</span>
+                <span class="separator">•</span>
+                <span>Dominic Arcibal</span>
+                <span class="separator">•</span>
+                <span>Web Developer</span>
+                <span class="separator">•</span>
+                <span>Freelancer</span>
+                <span class="separator">•</span>
+                <span>Rizal, Philippines</span>
+                <span class="separator">•</span>
+            </div>
+            <div class="marquee-inner" aria-hidden="true">
+                <span>Dominic Arcibal</span>
+                <span class="separator">•</span>
+                <span>Web Developer</span>
+                <span class="separator">•</span>
+                <span>Freelancer</span>
+                <span class="separator">•</span>
+                <span>Rizal, Philippines</span>
+                <span class="separator">•</span>
+                <span>Dominic Arcibal</span>
+                <span class="separator">•</span>
+                <span>Web Developer</span>
+                <span class="separator">•</span>
+                <span>Freelancer</span>
+                <span class="separator">•</span>
+                <span>Rizal, Philippines</span>
+                <span class="separator">•</span>
+            </div>
+        </div>
+    </footer>
+
+    <div id="lightbox" class="lightbox-modal">
+        <div class="lightbox-content">
+            <button class="close-lightbox" id="closeLightbox">&times;</button>
+            <img id="lightbox-img" class="lightbox-img" src="" alt="Full view">
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
